@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +64,160 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	margin: 0 auto;
+	width: 880px;
+}
+
+header nav {
+  display: inline-block;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 25px;
+}
+
+.services-header-container {
+	width: 880px;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+}
+
+.services-header-img {
+	margin-top: 25px;
+}
+
+.services-header-container h3 {
+	font-size: 24px;
+}
+
+.services-title {
+	margin: 25px 0 40px 0;
+}
+
+.main-card-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.content-card {
+	width: 420px;
+	height: 250px;
+	padding: 20px;
+	margin: 20px 0;
+	background-color:#EEE;
+	border: 1px solid black;
+}
+
+.content-card p {
+	line-height: 20px;
+}
+
+.main-card-content .content-card button {
+  background: white;
+  /* vertical-align: bottom; */
+  margin: 25px 0 0 0;
+	padding: 10px 40px;
+	font-size: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-card-content .content-card button:hover {
+  background: black;
+  color: white;
+}
+
+.header-img {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 40px 0 30px 0;
+}
+
+.content-row {
+	display: inline-block;
+	width: 880px;
+}
+
+.content-row-half {
+	display: inline-block;
+	width: 435px;
+	margin: 20px 0 30px 0;
+}
+
+.middle-img {
+	max-width: 880px;
+	margin: 20px 0;
+}
+
+.content-row-third {
+	display: inline-block;
+	width: 289px;
+	margin: 15px 0 35px 0;
+}
+
+.content-row p {
+	font-size: 16px;
+}
+
+.bottom-facts-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 2px solid black;
+	padding: 40px 0;
+	margin: 25px 0;
+}
+
+.bottom-facts-list {
+	list-style-type: square;
+	list-style-position: inside;
+	line-height: 30px;
+	margin: 0;
+}
+
+.bottom-facts-content p {
+	margin: 0 50px 20px 0;
+}
+
+.footer-contact {
+	font-size: 14px;
+	padding: 15px 0;
+	margin: 20px 0;
+}
+
+.footer-contact p {
+	margin: 20px 0;
+}
+
+.footer-copyright {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+}
