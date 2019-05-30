@@ -70,6 +70,13 @@ h1, h2, h3, h4, h5 {
 	width: 880px;
 }
 
+section p {
+	line-height: 1.2em;
+	font-size: 16px;
+}
+
+/* NAV BAR */
+
 header nav {
 	display: inline-block;
   width: 692px;
@@ -100,10 +107,7 @@ header .logo {
 	margin: 28px 0 22px 0;
 }
 
-section p {
-	line-height: 1.2em;
-	font-size: 16px;
-}
+/* HOME PAGE */
 
 .header-container {
 	display: flex;
@@ -139,52 +143,6 @@ section p {
 	margin: 45px 0 75px 0;
 }
 
-.services-header-container {
-	width: 880px;
-	border-bottom: 1px solid black;
-	margin-bottom: 20px;
-}
-
-.services-header-container h3 {
-	font-size: 26px;
-}
-
-.services-title {
-	margin: 30px 0 40px 0;
-}
-
-.services-card-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.services-content-card {
-	width: 420px;
-	height: 250px;
-	padding: 20px;
-	margin: 20px 0;
-	background-color:#EEE;
-	border: 1px solid black;
-}
-
-.services-card-container .services-content-card button {
-  background: white;
-  margin: 25px 0 0 0;
-	padding: 10px 40px;
-	font-size: 12px;
-	border: 1px solid black;
-	border-radius: 5px;
-  cursor: pointer;
-}
-
-.services-card-container .services-content-card button:hover {
-  background: black;
-  color: white;
-}
-
-
 .content-row {
 	display: inline-block;
 	width: 880px;
@@ -211,7 +169,54 @@ section p {
 	font-size: 16px;
 }
 
-.bottom-facts-container {
+/* SERVICES */
+
+.services-header-container {
+	width: 880px;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+}
+
+.services-header-container h3 {
+	font-size: 26px;
+}
+
+.services-title {
+	margin: 30px 0 40px 0;
+}
+
+.services-card-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.services-card {
+	width: 420px;
+	height: 250px;
+	padding: 20px;
+	margin: 20px 0;
+	background-color:#EEE;
+	border: 1px solid black;
+}
+
+.services-card-container .services-content-card button {
+  background: white;
+  margin: 25px 0 0 0;
+	padding: 10px 40px;
+	font-size: 12px;
+	border: 1px solid black;
+	border-radius: 5px;
+  cursor: pointer;
+}
+
+.services-card-container .services-content-card button:hover {
+  background: black;
+  color: white;
+}
+
+.services-facts-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -220,15 +225,31 @@ section p {
 	margin: 25px 0;
 }
 
-.bottom-facts-list {
+.services-facts-list {
 	list-style-type: square;
 	list-style-position: inside;
 	line-height: 30px;
 	margin: 0;
 }
 
-.bottom-facts-content p {
+.services-facts-content p {
 	margin: 0 50px 20px 0;
+}
+
+/* PRODUCTS PAGE */
+
+.products-header-container {
+	display: flex;
+	margin: 10px;
+}
+
+.products-card-container {
+	display: flex;
+}
+
+.products-card {
+	width: 250px;
+	box-shadow: 10px, 0px;
 }
 
 .content-contact {
