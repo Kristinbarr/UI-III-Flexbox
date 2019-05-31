@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container {
+body {
 	margin: 0 auto;
 	width: 880px;
 }
@@ -124,9 +124,11 @@ header .logo {
 	justify-content: center;
 	align-items: center;
 	margin: 0 80px;
+	transition-duration: 1s;
 }
 
 .header-title h1 {
+	font-family: 'Alegreya Sans SC', sans-serif;
 	font-size: 75px;
 	text-align: center;
 }
@@ -137,6 +139,12 @@ header .logo {
 	font-size: 14px;
 	color: #444;
 	border: 1px solid #999;
+	transition-duration: 0.5s;
+}
+
+.button-get-started:hover {
+	box-shadow: 0 0 10px 3px rgba(0, 100, 255, .5);
+	transition-duration: 0.5s;
 }
 
 .header-img {
@@ -151,7 +159,7 @@ header .logo {
 .content-row-half {
 	display: inline-block;
 	width: 435px;
-	margin: 20px 0 30px 0;
+	margin: 20px 0;
 }
 
 .middle-img {
@@ -162,11 +170,21 @@ header .logo {
 .content-row-third {
 	display: inline-block;
 	width: 289px;
-	margin: 15px 0 35px 0;
+	margin: 20px 0;
 }
 
 .content-row p {
 	font-size: 16px;
+}
+
+.content-contact {
+	padding-top: 40px;
+	margin: 20px 0;
+	border-top: 1px solid black;
+}
+
+.content-contact p {
+	margin: 15px 0;
 }
 
 /* SERVICES */
@@ -252,19 +270,10 @@ header .logo {
 	box-shadow: 10px, 0px;
 }
 
-.content-contact {
-	font-size: 14px;
-	padding: 15px 0;
-	margin: 20px 0;
-	border-top: 2px solid black;
-}
-
-.content-contact p {
-	margin: 20px 0;
-}
+/* FOOTER */
 
 footer {
-	margin: 32px 0;
+	padding: 30px 0;
 	text-align: center;
 	font-size: 14px;
 }
