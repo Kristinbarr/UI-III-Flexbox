@@ -65,10 +65,17 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container {
+body {
 	margin: 0 auto;
 	width: 880px;
 }
+
+section p {
+	line-height: 1.2em;
+	font-size: 16px;
+}
+
+/* NAV BAR */
 
 header nav {
 	display: inline-block;
@@ -100,10 +107,7 @@ header .logo {
 	margin: 28px 0 22px 0;
 }
 
-section p {
-	line-height: 1.2em;
-	font-size: 16px;
-}
+/* HOME PAGE */
 
 .header-container {
 	display: flex;
@@ -120,9 +124,11 @@ section p {
 	justify-content: center;
 	align-items: center;
 	margin: 0 80px;
+	transition-duration: 1s;
 }
 
 .header-title h1 {
+	font-family: 'Alegreya Sans SC', sans-serif;
 	font-size: 75px;
 	text-align: center;
 }
@@ -133,11 +139,55 @@ section p {
 	font-size: 14px;
 	color: #444;
 	border: 1px solid #999;
+	transition-duration: 0.5s;
+}
+
+.button-get-started:hover {
+	box-shadow: 0 0 10px 3px rgba(0, 100, 255, .5);
+	transition-duration: 0.5s;
 }
 
 .header-img {
 	margin: 45px 0 75px 0;
 }
+
+.content-row {
+	display: inline-block;
+	width: 880px;
+}
+
+.content-row-half {
+	display: inline-block;
+	width: 435px;
+	margin: 20px 0;
+}
+
+.middle-img {
+	max-width: 880px;
+	margin: 20px 0;
+}
+
+.content-row-third {
+	display: inline-block;
+	width: 289px;
+	margin: 20px 0;
+}
+
+.content-row p {
+	font-size: 16px;
+}
+
+.content-contact {
+	padding-top: 40px;
+	margin: 20px 0;
+	border-top: 1px solid black;
+}
+
+.content-contact p {
+	margin: 15px 0;
+}
+
+/* SERVICES */
 
 .services-header-container {
 	width: 880px;
@@ -160,7 +210,7 @@ section p {
 	justify-content: space-between;
 }
 
-.services-content-card {
+.services-card {
 	width: 420px;
 	height: 250px;
 	padding: 20px;
@@ -184,34 +234,7 @@ section p {
   color: white;
 }
 
-
-.content-row {
-	display: inline-block;
-	width: 880px;
-}
-
-.content-row-half {
-	display: inline-block;
-	width: 435px;
-	margin: 20px 0 30px 0;
-}
-
-.middle-img {
-	max-width: 880px;
-	margin: 20px 0;
-}
-
-.content-row-third {
-	display: inline-block;
-	width: 289px;
-	margin: 15px 0 35px 0;
-}
-
-.content-row p {
-	font-size: 16px;
-}
-
-.bottom-facts-container {
+.services-facts-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -220,30 +243,37 @@ section p {
 	margin: 25px 0;
 }
 
-.bottom-facts-list {
+.services-facts-list {
 	list-style-type: square;
 	list-style-position: inside;
 	line-height: 30px;
 	margin: 0;
 }
 
-.bottom-facts-content p {
+.services-facts-content p {
 	margin: 0 50px 20px 0;
 }
 
-.content-contact {
-	font-size: 14px;
-	padding: 15px 0;
-	margin: 20px 0;
-	border-top: 2px solid black;
+/* PRODUCTS PAGE */
+
+.products-header-container {
+	display: flex;
+	margin: 10px;
 }
 
-.content-contact p {
-	margin: 20px 0;
+.products-card-container {
+	display: flex;
 }
+
+.products-card {
+	width: 250px;
+	box-shadow: 10px, 0px;
+}
+
+/* FOOTER */
 
 footer {
-	margin: 32px 0;
+	padding: 30px 0;
 	text-align: center;
 	font-size: 14px;
 }
